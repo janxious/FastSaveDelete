@@ -4,6 +4,7 @@ BattleTech Mod (using [BTML](https://github.com/Mpstark/BattleTechModLoader) and
 
 ## Features
 * No comfirmation prompt for deleting save games
+* _Do_ prompt for most recent save
 
 ## Download
 Downloads can be found on [Github](https://github.com/janxious/FastSaveDelete/releases).

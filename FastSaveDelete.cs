@@ -23,27 +23,11 @@ namespace FastSaveDelete
             ref SlotModel slot,
             SGLoadSavedGameScreen __instance)
         {
-//  The code that is commented would work, except we can't use
-//  the slot parameter in an anonymous function so we are forced
-//  to not have safety for latest save.
-//            SlotModel mostRecentSave = __instance.saveStructure.MostRecentSave;
-//            if (slot == mostRecentSave)
-//            {
-//                var bringToFrontMethodInfo =
-//                    ReflectionHelper.GetPrivateMethodInfo(__instance, "BringToFront", new Type[] { });
-//                var action = (Action) Delegate.CreateDelegate(typeof(Action), bringToFrontMethodInfo);
-//                
-//                GenericPopupBuilder.Create("Delete Save", "Are you sure?")
-//                    .AddButton("Cancel", action, true, null).AddButton("OK", delegate
-//                        {
-//                            ActuallyDeleteSave(__instance, slot);
-//                        }, true, null).IsNestedPopupWithBuiltInFader().Render();
-//            }
-//            else
-//            {
-            ActuallyDeleteSave(__instance, slot);
-//            }
+            SlotModel mostRecentSave = __instance.saveStructure.MostRecentSave;
+            // normal behavior for the most recent save.
+            if (slot == mostRecentSave) return true;
 
+            ActuallyDeleteSave(__instance, slot);
             return false;
         }
 
