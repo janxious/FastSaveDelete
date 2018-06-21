@@ -23,7 +23,7 @@ namespace FastSaveDelete
             ref SlotModel slot,
             SGLoadSavedGameScreen __instance)
         {
-            SlotModel mostRecentSave = __instance.saveStructure.MostRecentSave;
+            SlotModel mostRecentSave = __instance.saveStructure.MostRecentCampaignSave;
             // normal behavior for the most recent save.
             if (slot == mostRecentSave) return true;
 
