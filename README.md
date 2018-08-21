@@ -1,3 +1,5 @@
+# This is a feature in [BattleTech v1.2](https://forum.paradoxplaza.com/forum/index.php?threads/beta-battletech-update-1-2-0-release-notes.1115763/) and as such you should not use this mod.
+
 # Fast Save Delete
 
 BattleTech Mod (using [BTML](https://github.com/Mpstark/BattleTechModLoader) and [ModTek](https://github.com/Mpstark/ModTek)).
